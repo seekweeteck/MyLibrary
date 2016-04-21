@@ -4,28 +4,12 @@
         "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\src\\main\\res\\menu\\statistic.xml"
     },
     {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\menu\\feedback_menu.xml",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\menu\\feedback_menu.xml"
-    },
-    {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\menu\\statistic.xml",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\menu\\statistic.xml"
-    },
-    {
         "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\menu\\settings.xml",
         "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\src\\main\\res\\menu\\settings.xml"
     },
     {
         "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\menu\\activity_my_fragment.xml",
         "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\src\\main\\res\\menu\\activity_my_fragment.xml"
-    },
-    {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\menu\\activity_my_fragment.xml",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\menu\\activity_my_fragment.xml"
-    },
-    {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\menu\\settings.xml",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\menu\\settings.xml"
     },
     {
         "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\menu\\feedback_menu.xml",

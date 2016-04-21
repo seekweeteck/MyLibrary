@@ -1,3 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\TARC\AndroidStudioProjects\fragment\MyLibrary\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="977fb45623c5084828307288283f8bf7c67c55ae">
+        <dex dex="C:\Users\TARC\AndroidStudioProjects\fragment\MyLibrary\build\intermediates\pre-dexed\debug\instant-run_5b121447f0a1140b55f88c0a700e3e836abd8714.jar" />
+    </item>
+    <item
+        jar="C:\Users\TARC\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\TARC\AndroidStudioProjects\fragment\MyLibrary\build\intermediates\pre-dexed\debug\support-v4-19.1.0_c27bfbf7dc62c61f6c2472a1b71a205ff4db6668.jar" />
+    </item>
+    <item
+        jar="C:\Users\TARC\AndroidStudioProjects\fragment\MyLibrary\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="22.0.1"
+        sha1="5a1bf2b23c41c00f84a4b390f17b04a543e6d010">
+        <dex dex="C:\Users\TARC\AndroidStudioProjects\fragment\MyLibrary\build\intermediates\pre-dexed\debug\instant-run-bootstrap_65ea9dfd30f172e6c4e8d073887ccbaa32af85da.jar" />
+    </item>
+
+</items>

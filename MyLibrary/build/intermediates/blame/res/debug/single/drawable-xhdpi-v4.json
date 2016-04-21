@@ -1,27 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_stop.png",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\drawable-xhdpi\\ic_stop.png"
-    },
-    {
         "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_prev.png",
         "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\src\\main\\res\\drawable-xhdpi\\ic_prev.png"
     },
     {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_next.png",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\drawable-xhdpi\\ic_next.png"
-    },
-    {
         "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mic.png",
         "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\src\\main\\res\\drawable-xhdpi\\ic_mic.png"
-    },
-    {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mic.png",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\drawable-xhdpi\\ic_mic.png"
-    },
-    {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_ok.png",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\drawable-xhdpi\\ic_ok.png"
     },
     {
         "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_cancel.png",
@@ -32,28 +16,12 @@
         "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_glossary.png",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\drawable-xhdpi\\ic_glossary.png"
-    },
-    {
         "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_settings.png",
         "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\src\\main\\res\\drawable-xhdpi\\ic_settings.png"
     },
     {
         "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_next.png",
         "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\src\\main\\res\\drawable-xhdpi\\ic_next.png"
-    },
-    {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_action_comment.png",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\drawable-xhdpi\\ic_action_comment.png"
-    },
-    {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_stop.png",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\src\\main\\res\\drawable-xhdpi\\ic_stop.png"
-    },
-    {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\play.png",
@@ -64,20 +32,12 @@
         "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\src\\main\\res\\drawable-xhdpi\\ic_action_comment.png"
     },
     {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\play.png",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\drawable-xhdpi\\play.png"
-    },
-    {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\blank.png",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\drawable-xhdpi\\blank.png"
+        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_stop.png",
+        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\src\\main\\res\\drawable-xhdpi\\ic_stop.png"
     },
     {
         "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_ok.png",
         "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\src\\main\\res\\drawable-xhdpi\\ic_ok.png"
-    },
-    {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_prev.png",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\drawable-xhdpi\\ic_prev.png"
     },
     {
         "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_glossary.png",
@@ -86,18 +46,6 @@
     {
         "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\blank.png",
         "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\src\\main\\res\\drawable-xhdpi\\blank.png"
-    },
-    {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\back.png",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\drawable-xhdpi\\back.png"
-    },
-    {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_settings.png",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\drawable-xhdpi\\ic_settings.png"
-    },
-    {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_cancel.png",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\drawable-xhdpi\\ic_cancel.png"
     },
     {
         "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\back.png",

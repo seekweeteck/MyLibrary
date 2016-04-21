@@ -1,18 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\xml\\settings.xml",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\xml\\settings.xml"
-    },
-    {
         "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
         "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\src\\main\\res\\xml\\preferences.xml"
     },
     {
         "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\xml\\settings.xml",
         "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\src\\main\\res\\xml\\settings.xml"
-    },
-    {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\xml\\preferences.xml"
     }
 ]

@@ -18,6 +18,7 @@ import android.speech.tts.UtteranceProgressListener;
 import android.support.v4.app.NavUtils;
 import android.text.format.Time;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.Menu;
@@ -59,20 +60,17 @@ public class PageActivity extends Activity implements OnClickListener,
 
 	private static final int MY_DATA_CHECK_CODE = 0;
 
-	TextView textViewStatus;
-	float xy; // Touch coordinate point
+	private TextView textViewStatus;
 
-	String intID = null; // ID of story
-	String name = null; // name of storybook
 
-	File dir; // Directory of story file
-	File picFile; // Directory of picture file
+	private String intID = null; // ID of story
+	private String name = null; // name of storybook
+
+	private File dir; // Directory of story file
+	private File picFile; // Directory of picture file
 
 	// Text to speech
 	private TextToSpeech enTTS;
-	private TextToSpeech cnTTS;
-	private TextToSpeech bmTTS;
-	private TextToSpeech tmTTS;
 
 	private boolean pref_en;
 	private boolean pref_bm;
@@ -80,34 +78,34 @@ public class PageActivity extends Activity implements OnClickListener,
 	private boolean pref_tm;
 
 	// ID of new buttons
-	int index = 0;
-	int view_id; // ID of a button selected by user
+	private int index = 0;
+	private int view_id; // ID of a button selected by user
 
 	// Text size
-	int font_size;
+	private int font_size;
 
 	// Screen dimension
-	long width = 0;
-	LinearLayout tl;
+	private long width = 0;
+	private LinearLayout tl;
 
 	// ImageView imagePage;
 	private Book myBook = new Book(9, null);
 
 	// Animation
-	AnimationDrawable animation;
+	private AnimationDrawable animation;
 	// Boolean blnAnimationStarted=false;
-	ArrayList<String> imageList = new ArrayList<String>();
+	private ArrayList<String> imageList = new ArrayList<String>();
 
 	/** Create Object For SiteList Class */
 	private PageList sitesList = null;
 
 	// Create a reading record
-	ReadRecord rec;
-	Boolean complete = false;
+	private ReadRecord rec;
+	private Boolean complete = false;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
-
+		Log.d("onCreate", "Started");
 		super.onCreate(savedInstanceState);
 
 		// setContentView(R.layout.main);
@@ -198,7 +196,6 @@ public class PageActivity extends Activity implements OnClickListener,
 		default:
 			return true;
 		}
-
 	}
 
 	private void goNextPage() {
@@ -210,7 +207,6 @@ public class PageActivity extends Activity implements OnClickListener,
 				complete = true; // Read is completed	
 			}
 		}
-
 	}
 
 	private void goPrevPage() {
@@ -225,9 +221,9 @@ public class PageActivity extends Activity implements OnClickListener,
 			if (resultCode == TextToSpeech.Engine.CHECK_VOICE_DATA_PASS) {
 				// success
 				enTTS = new TextToSpeech(this, this);
-				cnTTS = new TextToSpeech(this, this);
+				/*cnTTS = new TextToSpeech(this, this);
 				bmTTS = new TextToSpeech(this, this);
-				tmTTS = new TextToSpeech(this, this);
+				tmTTS = new TextToSpeech(this, this);*/
 			} else {
 				// missing data, install it
 				Intent installIntent = new Intent();
@@ -241,7 +237,6 @@ public class PageActivity extends Activity implements OnClickListener,
 
 	private void createStory() {
 		try {
-
 			/** Handling XML */
 			SAXParserFactory spf = SAXParserFactory.newInstance();
 			SAXParser sp = spf.newSAXParser();
@@ -323,29 +318,6 @@ public class PageActivity extends Activity implements OnClickListener,
 		}
 	}
 
-	/*private void loadLastPage() {
-		final ImageButton btnReturn = new ImageButton(this);
-
-		LinearLayout tr = new LinearLayout(this);
-		tr.setLayoutParams(new LinearLayout.LayoutParams(
-				LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
-
-		btnReturn.setBackgroundResource(R.drawable.back);
-		btnReturn.setOnClickListener(this);
-		btnReturn.setContentDescription("RETURN");
-		btnReturn.setId(index);
-
-		tr.addView(btnReturn);
-
-		final ImageView imagePage = (ImageView) this
-				.findViewById(R.id.imageViewPic);
-
-		imagePage.setImageDrawable(getResources().getDrawable(R.drawable.end));
-		tl.removeAllViews(); // clear table layout
-		tl.addView(tr);
-		textViewStatus.setText("");
-	}*/
-
 	private void addText(String lang, String input) {
 		// LinearLayout tl = (LinearLayout) findViewById(R.id.LinearLayoutText);
 		int i;
@@ -384,13 +356,11 @@ public class PageActivity extends Activity implements OnClickListener,
 
 		for (i = 0; i < output.length; i++) {
 			final Button chk = new Button(this);
-			//chk.setBackgroundColor(Color.WHITE);
-			//chk.setTextColor(Color.BLACK);
 			chk.setTextSize(TypedValue.COMPLEX_UNIT_PX, font_size);
-			chk.setGravity(Gravity.LEFT);
+			chk.setGravity(Gravity.CENTER);
 			chk.setText(output[i]);
 			chk.setId(i + 1);
-			chk.setBackgroundResource(R.drawable.button_pressed);//new 
+			chk.setBackgroundResource(R.drawable.button_pressed);
 			paint.setTextSize(font_size);
 			
 			chk.setContentDescription(lang + " " + output[i]);
@@ -422,61 +392,17 @@ public class PageActivity extends Activity implements OnClickListener,
 		tl.addView(tr);
 	}
 
-	// private void addText(String lang, String input) {
-	//
-	// createView cV = new createView(lang, input, font_size, tl, this);
-	// cV.setView();
-	// }
-
-
 	public void onInit(int arg0) {
+		/*Log.d("onInt", "Started");
 		new Thread(new Runnable() {
 			public void run() {
 				int status = enTTS.setLanguage(new Locale("en"));;
-				if(status != TextToSpeech.ERROR) // initialization me error to nae ha
+				if(status == TextToSpeech.ERROR) // initialization me error to nae ha
 				{
-					enTTS.setPitch(1.1f); // saw from internet
-					enTTS.setSpeechRate(0.4f); // f denotes float, it actually type casts 0.5 to float
-					enTTS.setLanguage(Locale.US);
+					Log.d("Error", "Setting EN TTS");
 				}
 			}
-		}).start();
-
-		/*
-		if (arg0 == TextToSpeech.SUCCESS) {
-			int status = enTTS.setLanguage(new Locale("en"));
-
-			if (status == TextToSpeech.SUCCESS) {
-				enTTS.speak("", TextToSpeech.QUEUE_FLUSH, null);
-			}else{
-				Log.d("onInit", "Error EN TTS");
-			}
-			status = cnTTS.setLanguage(new Locale("zh_CN"));
-			if (status == TextToSpeech.SUCCESS) {
-				cnTTS.speak("华语", TextToSpeech.QUEUE_FLUSH, null);
-			}else{
-				Log.d("onInit", "Error CN TTS");
-			}
-
-			status = bmTTS.setLanguage(new Locale("id"));
-			if (status == TextToSpeech.SUCCESS) {
-				bmTTS.speak("Bahasa", TextToSpeech.QUEUE_FLUSH, null);
-			}else{
-				Log.d("onInit", "Error BM TTS");
-			}
-
-			status = tmTTS.setLanguage(new Locale("ta"));
-
-			if (status == TextToSpeech.SUCCESS) {
-				tmTTS.speak("தமிழ்", TextToSpeech.QUEUE_FLUSH, null);
-			}else{
-				Log.d("onInit", "Error TM TTS");
-			}
-		} else if (arg0 == TextToSpeech.ERROR) {
-			Toast.makeText(this, "Error initializing Text-To-Speech engine",
-					Toast.LENGTH_SHORT).show();
-		}
-		*/
+		}).start();*/
 	}
 	public void onClick(View v) {
 
@@ -487,19 +413,19 @@ public class PageActivity extends Activity implements OnClickListener,
 
 		if (words.compareTo("EN") == 0) {
 			storyText = myBook.getScriptByPage("EN", myBook.getCurrentPage());
-			enTTS.speak(storyText, TextToSpeech.QUEUE_FLUSH, null);
+			speakIt(Locale.ENGLISH, storyText);
 			rec.addEN();
 		} else if (words.compareTo("CN") == 0) {
 			storyText = myBook.getScriptByPage("CN", myBook.getCurrentPage());
-			cnTTS.speak(storyText, TextToSpeech.QUEUE_FLUSH, null);
+			speakIt(Locale.SIMPLIFIED_CHINESE, storyText);
 			rec.addCN();
 		} else if (words.compareTo("BM") == 0) {
 			storyText = myBook.getScriptByPage("BM", myBook.getCurrentPage());
-			bmTTS.speak(storyText, TextToSpeech.QUEUE_FLUSH, null);
+			speakIt(new Locale("id"), storyText);
 			rec.addBM();
 		} else if (words.compareTo("TM") == 0) {
 			storyText = myBook.getScriptByPage("TM", myBook.getCurrentPage());
-			tmTTS.speak(storyText, TextToSpeech.QUEUE_FLUSH, null);
+			speakIt(new Locale("tm"), storyText);
 			rec.addTM();
 		} else if (words.compareTo("RETURN") == 0) {
 			myBook.setCurrentPage(0);
@@ -511,20 +437,29 @@ public class PageActivity extends Activity implements OnClickListener,
 			storyText = words.substring(3);
 
 			HashMap<String, String> map = new HashMap<String, String>();
+
 			map.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, storyText);
 
 			if (Lang.compareTo("EN") == 0) {
-				enTTS.speak(storyText, TextToSpeech.QUEUE_FLUSH, null);
-			} else if (Lang.compareTo("CN") == 0) {
-				cnTTS.speak(storyText, TextToSpeech.QUEUE_FLUSH, null);
+				speakIt(Locale.ENGLISH, storyText);
+			}else if(Lang.compareTo("CN") == 0){
+				speakIt(Locale.SIMPLIFIED_CHINESE, storyText);
 			} else if (Lang.compareTo("BM") == 0) {
-				bmTTS.speak(storyText, TextToSpeech.QUEUE_FLUSH, null);
+				speakIt(new Locale("id"), storyText);
 			} else if (Lang.compareTo("TM") == 0) {
-				tmTTS.speak(storyText, TextToSpeech.QUEUE_FLUSH, null);
+				speakIt(new Locale("tm"), storyText);
 			}
 		}
 	}
 
+	private void speakIt(final Locale lang, final String script){
+		new Thread(new Runnable() {
+			public void run() {
+				enTTS.setLanguage(lang);;
+				enTTS.speak(script, TextToSpeech.QUEUE_FLUSH, null);
+			}
+		}).start();
+	}
 	private void setPage() {
 		// Split a sentence into different words
 		String del = " ";
@@ -538,12 +473,12 @@ public class PageActivity extends Activity implements OnClickListener,
 		startAnimation(imageList);
 		
 		// This gets the first image
-		picFile = new File(dir, "/mmsr/" + intID + "/pic/" + pictureList[0]
+		/*picFile = new File(dir, "/mmsr/" + intID + "/pic/" + pictureList[0]
 				+ ".png");
 		Bitmap bitmap = BitmapFactory.decodeFile(picFile.toString());
 		final ImageView imagePage = (ImageView) this
 				.findViewById(R.id.imageViewPic);
-		imagePage.setImageBitmap(bitmap);
+		imagePage.setImageBitmap(bitmap);*/
 
 		tl.removeAllViews(); // clear table layout
 
@@ -651,12 +586,12 @@ public class PageActivity extends Activity implements OnClickListener,
 		if (enTTS != null) {
 			enTTS.stop();
 			enTTS.shutdown();
-			bmTTS.stop();
+			/*bmTTS.stop();
 			bmTTS.shutdown();
 			cnTTS.stop();
 			cnTTS.shutdown();
 			tmTTS.stop();
-			tmTTS.shutdown();
+			tmTTS.shutdown();*/
 		}
 
 		// Create a reading record

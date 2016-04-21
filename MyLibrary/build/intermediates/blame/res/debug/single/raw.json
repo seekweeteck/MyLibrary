@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\build\\intermediates\\res\\merged\\debug\\raw\\library.xml",
-        "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\fragment\\src\\main\\res\\raw\\library.xml"
-    },
-    {
         "merged": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\build\\intermediates\\res\\merged\\debug\\raw\\library.xml",
         "source": "C:\\Users\\TARC\\AndroidStudioProjects\\fragment\\MyLibrary\\src\\main\\res\\raw\\library.xml"
     }
