@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text_size_title">
+        <item name="0">Small</item>
+        <item name="1">Medium</item>
+        <item name="2">Large</item>
+        <item name="3">Extra Large</item>
+    </string-array>
+    <string-array name="text_size_values">
+        <item name="0">40</item>
+        <item name="1">45</item>
+        <item name="2">50</item>
+        <item name="3">55</item>
+    </string-array>
+    <color name="black">#000000</color>
+    <color name="highlight_color">#FFFF00</color>
+    <color name="light_orange">#FFCC99</color>
+    <color name="orange">#FFA500</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="activity_horizontal_margin">16sp</dimen>
+    <dimen name="activity_vertical_margin">16sp</dimen>
+    <dimen name="page_font_size">20dp</dimen>
+    <dimen name="title_font_size">40sp</dimen>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">MMSR</string>
+    <string name="blank"/>
+    <string name="bm">Bahasa Malaysia</string>
+    <string name="bracket">)</string>
+    <string name="brosis">Brothers and Sisters</string>
+    <string name="cancel">Cancel</string>
+    <string name="chinese">Chinese</string>
+    <string name="closeBracket">)</string>
+    <string name="cn">华文</string>
+    <string name="comment">Comment</string>
+    <string name="comments">What is your comment about this story?</string>
+    <string name="date">Date:</string>
+    <string name="delete_all">Delete All</string>
+    <string name="en">English</string>
+    <string name="en_comment">Please rate this story</string>
+    <string name="en_who">Who do you read this story with?</string>
+    <string name="glosssary">Glossary</string>
+    <string name="hello"/>
+    <string name="hello_world">Hello world!</string>
+    <string name="home">Home</string>
+    <string name="illustration">Illustration</string>
+    <string name="language">Language</string>
+    <string name="last_page">Last Page</string>
+    <string name="menu_settings">Settings</string>
+    <string name="my_library">My Library</string>
+    <string name="name">Name</string>
+    <string name="next">Next</string>
+    <string name="number">Number</string>
+    <string name="ok">OK</string>
+    <string name="openBracket">(</string>
+    <string name="others">Others</string>
+    <string name="parent">Parent</string>
+    <string name="previous">Previous</string>
+    <string name="read">(Touch to Start)</string>
+    <string name="read_again">Read again</string>
+    <string name="save">Save</string>
+    <string name="set_text_size">Set text size</string>
+    <string name="settings">Settings</string>
+    <string name="someoneelse">Someone else</string>
+    <string name="statistic">Statistic</string>
+    <string name="tamil">Tamil</string>
+    <string name="text_size">Text Size</string>
+    <string name="time">Time:</string>
+    <string name="title_activity_end">End</string>
+    <string name="title_activity_end_page">EndPageActivity</string>
+    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_glossary">Glossary</string>
+    <string name="title_activity_statistic">Statistic</string>
+    <string name="tm">தமிழ்</string>
+    <style name="Background">
+        <item name="android:background">#FFF</item>
+    </style>
+    <style name="CodeFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:background">#C0C0C0</item>
+    </style>
+    <style name="ListFont">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/orange</item>
+    </style>
+    <style name="MyTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+    <style name="NoActionBar" parent="@android:style/Theme">
+        <!-- Inherits the default theme for pre-HC (no action bar) -->
+    </style>
+    <style name="PageFont">
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+    <style name="TextFont">
+        <item name="android:background">#FFF</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="TitleFont">
+        <item name="android:textSize">40dp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+    <style name="TitleList" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:background">#FFF</item>
+    </style>
+</resources>

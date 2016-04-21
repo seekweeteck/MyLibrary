@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mmsr.fragment"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/MyTheme" >
+        <activity
+            android:name="mmsr.activity.TitleActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/my_library"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="mmsr.activity.PageActivity"
+            android:parentActivityName="mmsr.activity.TitleActivity"
+            android:screenOrientation="landscape" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mmsr.activity.TitleActivity" />
+        </activity>
+        <activity
+            android:name="mmsr.activity.SetPreferenceActivity"
+            android:label="Setting"
+            android:parentActivityName="mmsr.activity.PageActivity"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mmsr.activity.PageActivity" />
+        </activity>
+        <activity
+            android:name="mmsr.activity.EndActivity"
+            android:label="@string/title_activity_end_page"
+            android:parentActivityName="mmsr.activity.TitleActivity"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mmsr.activity.TitleActivity" />
+        </activity>
+        <activity
+            android:name="mmsr.activity.GlossaryActivity"
+            android:label="@string/title_activity_glossary"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="mmsr.activity.StatisticActivity"
+            android:label="@string/title_activity_statistic"
+            android:parentActivityName="mmsr.activity.TitleActivity"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mmsr.activity.TitleActivity" />
+        </activity>
+        <activity
+            android:name="mmsr.activity.FeedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:parentActivityName="mmsr.activity.PageActivity"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mmsr.activity.PageActivity" />
+        </activity>
+    </application>
+
+</manifest>

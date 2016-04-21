@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:baselineAligned="false">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="mmsr.fragment.PageFragment"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="6" />
+
+</LinearLayout>

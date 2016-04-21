@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="CodeFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:background">#C0C0C0</item>
+    </style>
+
+    <style name="TextFont">
+        <item name="android:background">#FFF</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="PageFont">
+        <item name="android:textSize">30dp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <dimen name="page_font_size">20dp</dimen>
+
+    <style name="ListFont">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="Background">
+        <item name="android:background">#FFF</item>
+    </style>
+
+    <style name="TitleFont">
+        <item name="android:textSize">40dp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="TitleList" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:background">#FFF</item>
+    </style>
+
+    <style name="MyTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/orange</item>
+    </style>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:key="name"
+        android:summary="Set your name here"
+        android:title="Name" />
+
+    <ListPreference
+        android:entries="@array/text_size_title"
+        android:entryValues="@array/text_size_values"
+        android:key="text_size"
+        android:summary="@string/set_text_size"
+        android:title="@string/text_size" 
+        android:dialogTitle="@string/text_size" android:defaultValue="18"/>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="en"
+        android:summary="Select English"
+        android:title="@string/en" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="bm"
+        android:summary="Pilih Bahasa Malaysia"
+        android:title="@string/bm" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="cn"
+        android:summary="选择华文"
+        android:title="@string/cn" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="tm"
+        android:summary="தேர்ந்தெடுக்கப்பட்ட தமிழ்"
+        android:title="@string/tm" />
+
+</PreferenceScreen>

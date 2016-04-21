@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Users\TARC\AndroidStudioProjects\fragment\MyLibrary\src\main\assets"><file name="fonts/kanchi.ttf" path="C:\Users\TARC\AndroidStudioProjects\fragment\MyLibrary\src\main\assets\fonts\kanchi.ttf"/></source></dataSet><dataSet config="debug"><source path="C:\Users\TARC\AndroidStudioProjects\fragment\MyLibrary\src\debug\assets"/></dataSet></merger>

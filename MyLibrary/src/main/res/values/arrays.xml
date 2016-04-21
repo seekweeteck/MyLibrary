@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="text_size_values">
+        <item name="0">40</item>
+        <item name="1">45</item>
+        <item name="2">50</item>
+        <item name="3">55</item>
+    </string-array>
+     <string-array name="text_size_title">
+        <item name="0">Small</item>
+        <item name="1">Medium</item>
+        <item name="2">Large</item>
+        <item name="3">Extra Large</item>
+    </string-array>
+</resources>

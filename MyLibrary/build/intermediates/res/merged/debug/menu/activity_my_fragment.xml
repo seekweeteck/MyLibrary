@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/glossary"
+        android:icon="@drawable/ic_glossary" android:title="@string/glosssary" android:showAsAction="always">
+    </item>
+    <item android:id="@+id/comment" android:title="@string/comment" android:icon="@drawable/ic_action_comment" android:showAsAction="always"></item><item
+        android:id="@+id/menu_prev"
+        android:icon="@drawable/ic_prev"
+        android:showAsAction="always" android:title="@string/previous"/>
+    <item
+        android:id="@+id/menu_next"
+        android:icon="@drawable/ic_next"
+        android:showAsAction="always" android:title="@string/next"/>
+    
+
+</menu>

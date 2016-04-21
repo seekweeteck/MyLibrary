@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ActionBar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="show_message">Show Message</string>
+    <string name="clear_message">Clear Message</string>
+    <string name="sub_activity">Sub Activity</string>
+
+</resources>
